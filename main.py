@@ -26,7 +26,7 @@ if not GEMINI_API_KEY:
         "Set it in your environment (or Render's dashboard) before starting the app."
     )
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+client = genai.Client(api_key="GEMINI_API_KEY")
 
 # -----------------------------
 # Request Model
