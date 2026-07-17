@@ -32,8 +32,6 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 # Request Model
 # -----------------------------
 class EPDSRequest(BaseModel):
-    mother_name: str
-    baby_age_weeks: int
     score: int
     risk: str
 
@@ -70,12 +68,6 @@ def generate_epds_ai_response(
 You are Maave AI.
 
 A mother has completed the Edinburgh Postnatal Depression Scale screening.
-
-Mother Name:
-{mother_name}
-
-Baby Age:
-{baby_age_weeks} weeks
 
 EPDS Score:
 {score}
