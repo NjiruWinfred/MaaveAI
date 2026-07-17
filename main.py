@@ -58,8 +58,6 @@ def health():
 # AI Function
 # -----------------------------
 def generate_epds_ai_response(
-    mother_name,
-    baby_age_weeks,
     score,
     risk
 ):
@@ -104,8 +102,6 @@ def epds_ai(request: EPDSRequest):
     try:
 
         message = generate_epds_ai_response(
-            request.mother_name,
-            request.baby_age_weeks,
             request.score,
             request.risk
         )
